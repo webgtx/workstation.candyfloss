@@ -1,0 +1,18 @@
+---
+- hosts: localhost
+  connection: local 
+
+  tasks:
+    - name: Install regular flatpak apps 
+      community.general.flatpak:
+        name: 
+          - us.zoom.Zoom
+          - com.github.GradienceTeam.Gradience
+          - org.telegram.desktop
+          - xyz.diamondb.gtkcord4
+          - app.drey.Dialect
+          - com.google.Chrome
+          - org.gnome.Solanum
+          - com.rtosta.zapzap
+          - org.gnome.World.Secrets 
+      
