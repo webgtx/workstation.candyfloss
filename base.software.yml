@@ -12,4 +12,3 @@
         
     - name: Commit overlay changes
       shell: systemctl reboot
-      become: true

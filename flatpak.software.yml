@@ -3,7 +3,10 @@
   connection: local 
 
   tasks:
-    - name: Install regular flatpak apps 
+    - name: Add remote repository
+      shell: flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+
+    - name: Install regular flatpak apps
       community.general.flatpak:
         name: 
           - us.zoom.Zoom
