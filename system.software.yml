@@ -5,7 +5,7 @@
   tasks: 
     - name: Install overlay packages
       community.general.rpm_ostree_pkg:
-        name: 
+        name:
           - wl-clipboard
           - gnome-tweaks
           - ufw

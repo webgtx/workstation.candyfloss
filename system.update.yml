@@ -1,0 +1,7 @@
+---
+- hosts: localhost
+  connection: local 
+
+  tasks:
+    - name: Update the rpm-ostree image, accpet all defaults
+      ansible.posix.rpm_ostree_upgrade:
